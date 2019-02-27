@@ -5,7 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] bool isRotating = true;
-    [Range(0f, 360f)] [SerializeField] float rotationSpeed = 180f;
+    [Range(-720f, 720)] [SerializeField] float rotationSpeed = 180f;
     [SerializeField] float speed = 10f;
     [SerializeField] int damage = 50;
 

@@ -12,27 +12,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zucchini
       objectReference: {fileID: 0}
-    - target: {fileID: 5452830218941324900, guid: 48fc499ae979d2d49a4eed1cd2cbf38d,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d761cfd737f546d47ba61fc4f1941deb,
-        type: 3}
-    - target: {fileID: 5452830218941324900, guid: 48fc499ae979d2d49a4eed1cd2cbf38d,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.46666667
-      objectReference: {fileID: 0}
-    - target: {fileID: 5452830218941324900, guid: 48fc499ae979d2d49a4eed1cd2cbf38d,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.46666667
-      objectReference: {fileID: 0}
-    - target: {fileID: 5452830218941324900, guid: 48fc499ae979d2d49a4eed1cd2cbf38d,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5463980272733897351, guid: 48fc499ae979d2d49a4eed1cd2cbf38d,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
@@ -162,6 +141,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[8].y
       value: 0.20351034
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452830218941324900, guid: 48fc499ae979d2d49a4eed1cd2cbf38d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d761cfd737f546d47ba61fc4f1941deb,
+        type: 3}
+    - target: {fileID: 5452830218941324900, guid: 48fc499ae979d2d49a4eed1cd2cbf38d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.46666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452830218941324900, guid: 48fc499ae979d2d49a4eed1cd2cbf38d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.46666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452830218941324900, guid: 48fc499ae979d2d49a4eed1cd2cbf38d,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4400381905878048327, guid: 48fc499ae979d2d49a4eed1cd2cbf38d,
         type: 3}

@@ -14,18 +14,34 @@ public class LevelLoader : MonoBehaviour
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex == 0)
         {
-            StartCoroutine(WaitForLoad());
+            StartCoroutine(WaitForNextScene(timeToWait));
         }
     }
 
-    private IEnumerator WaitForLoad()
+    public IEnumerator WaitForNextScene(float timeToWait)
     {
         yield return new WaitForSeconds(timeToWait);
         LoadNextScene();
     }
 
-    private void LoadNextScene()
+    public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+
+    public IEnumerator LoadLooseScene(float timeToWait)
+    {
+        yield return new WaitForSeconds(timeToWait);
+        SceneManager.LoadScene("LooseScreen");
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

@@ -11,10 +11,11 @@ public class AttackerSpawner : MonoBehaviour
     
     IEnumerator Start()
     {
+        yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));
         while (canSpawn)
         {
-            yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));
             SpawnAttacker();
+            yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));
         }
     }
 
@@ -29,5 +30,10 @@ public class AttackerSpawner : MonoBehaviour
     {
         var newAttacker = Instantiate(attackerPrefab, transform.position, transform.rotation);
         newAttacker.transform.parent = transform;
+    }
+
+    public void StopSpawning()
+    {
+        canSpawn = false;
     }
 }
